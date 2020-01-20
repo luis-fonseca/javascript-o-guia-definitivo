@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moveon</title>
+</head>
+<body>
+    <p>Este é um parágrafo.</p>
+    <script>
+        function moveOn() {
+            // exibe uma caixa de diálogo modal para fazer uma pergunta ao usuário
+            let answer = confirm("Pronto para seguir?");
+
+            //  usuário confirmou
+            if (answer) {
+                window.location = "//google.com.br";
+            }
+        }
+
+        // a partir de agora, executa a função moveOn por um minuto
+        setTimeout(moveOn, 60000)
+
+    </script>
+</body>
+</html>
